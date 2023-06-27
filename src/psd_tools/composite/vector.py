@@ -63,7 +63,7 @@ def _get_color(color_mode, desc) -> Tuple[float, ...]:
     def rgb_to_cmyk(r, g, b) -> Tuple[float, ...]:
         if (r, g, b) == (0, 0, 0):
             # black
-            return (0., 0., 0.)
+            return (0., 0., 0., 1.)
         c = 1 - r
         m = 1 - g
         y = 1 - b
